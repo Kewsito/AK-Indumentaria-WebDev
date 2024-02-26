@@ -1,0 +1,66 @@
+
+  <footer class="footer cursor-default w-full text-white px-8% py-5 flex justify-center gap-20">
+    <article class="flex gap-5 justify-between flex-wrap">
+      <span class="flex flex-col gap-2">
+        <h3 class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-400 ">AK INDUMENTARIA</h3>
+        <p class="max-w-sm font-semibold">
+          HORARIOS DE ATENCIÓN: <br>
+          LUNES A VIERNES DE 9 A 13HS <br>
+        </p>
+      </span>
+    </article>
+    
+    <article class="flex gap-5 justify-between flex-wrap">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-400">TUS COMPRAS</h3>
+        <span>Como hacer tu pedido</span>
+        <span>Cambios</span>
+        <span>Envios a domicilio</span>
+        <span>Retiros por puerta</span>
+      </div>
+    </article>
+  </footer>
+   
+  <article class="flex justify-center text-white cursor-pointer m-10">
+    <a class="font-semibold" target="_blank" href="https://kewsito.github.io">Made By Kewsito</a>
+  </article>
+
+
+<style>
+  .footer {
+    position: relative;
+    min-height: 40vh;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  span.item {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    transform: rotate(50deg) skewX(-12deg);
+    border-radius: 3rem;
+    background-color: #008697;
+    filter: blur(3rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  @media (width < 600px) {
+  .footer{
+    padding: 10vh 8%;
+  }
+    
+  }
+</style>
