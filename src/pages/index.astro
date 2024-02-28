@@ -19,7 +19,7 @@ import Footer from "../components/Footer.astro";
     </p>
 
   </section>
-
+<hr>
 
   <section class="section-two relative px-8% py-10 flex flex-col gap-8">
     <article>
@@ -45,7 +45,7 @@ import Footer from "../components/Footer.astro";
         <img class="w-6" src="/images/arrow.svg" alt="">
       </span>
       <div class=" flex items-center justify-center flex-row">
-        <div>
+        <div class=" gap-10 mr-10">
           <button
         class="m-5 group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 bg-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-gradient-to-r from-blue-800 to-green-500 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
         >
@@ -93,11 +93,10 @@ import Footer from "../components/Footer.astro";
     </article>
 
     <article class="art2 text-white text-lg flex justify-center items-center flex-wrap ">
-      <div class="flex py-10 mr-20 w-full justify-center gap-40 ">
+      <div class="flex py-10 m-20 w-full justify-center gap-20 bg-red-500">
         <div class="border-solid border-2 border-gray-700 mr-20 flex-col">
           <h2 class="text-2xl p-10">Transferencia bancaria</h2>
           <!-- -->
-           
         </div>
         <div class="border-solid border-2 border-gray-700 justify-center mr-20 flex-row">
           <h2 class="text-2xl p-10">Billetera virtual</h2>
@@ -112,7 +111,7 @@ import Footer from "../components/Footer.astro";
         </div>
           <!-- -->
 
-        <div class="border-solid border-2 border-gray-700 ml-20 flex-col">
+        <div class="border-solid border-2 border-gray-700  flex-col">
           <h2 class="text-2xl p-10">Efectivo</h2>
           <!-- -->
         </div>
@@ -137,8 +136,9 @@ import Footer from "../components/Footer.astro";
       </div>
       <div>
         <div class="flex m-10 gap-10 ">
-        <!-- ICONOS-->        
+          <!-- ICONOS-->        
           <section class="flex justify-center items-center">
+            <a href="https://www.instagram.com/AKindumentariaoK" target="_blank" rel="">
             <button 
             class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-gradient-to-r from-orange-400 to-pink-600 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
           >
@@ -157,15 +157,16 @@ import Footer from "../components/Footer.astro";
               ></path>
             </svg>
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-300 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+              class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
             >
-              Instagram
+            Instagram
             </span>
-          </button>
+            </button>
+          </a>
         </section>
         <section class="flex justify-center items-center">
+          <a href="https://wa.me" target="_blank" rel="">
           <button
-            href="/"
             class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-green-700 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
           >
             <svg
@@ -183,11 +184,12 @@ import Footer from "../components/Footer.astro";
               ></path>
             </svg>
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+              class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
             >
               Whatsapp
             </span>
           </button>
+        </a>
         </section>
 
       </div>
@@ -220,8 +222,14 @@ import Footer from "../components/Footer.astro";
   .section-two {
     width: 100%;
     min-height: 70vh;
- 
   }
+
+  
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
 
   .section-three{
     width: 100%;
@@ -338,29 +346,6 @@ import Footer from "../components/Footer.astro";
   .items {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  .button {
-    --color: #ffffff;
-    width: 120px;
-    height: 40px;
-    background-color: transparent;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.5s;
-    font-weight: 400;
-    font-size: 12px;
-    font-weight: 600;
-    border: 1px solid;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
