@@ -44,9 +44,10 @@ import Footer from "../components/Footer.astro";
         <h1 class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-lime-500 to-cyan-600  font-semibold">PRODUCTOS</h1>
         <img class="w-6" src="/images/arrow.svg" alt="">
       </span>
-      <div class="mx-60 flex place-items-center gap-20">
-        <button
-        class=" group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 bg-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-gradient-to-r from-blue-800 to-green-500 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
+      <div class=" flex items-center justify-center flex-row">
+        <div>
+          <button
+        class="m-5 group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 bg-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-gradient-to-r from-blue-800 to-green-500 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
         >
         <svg
         y="0"
@@ -63,20 +64,23 @@ import Footer from "../components/Footer.astro";
         ></path>
       </svg>
       CATÁLOGO
-    </button>
+          </button>
+        </div>
         
-        <article class="w-auto text-white text-lg flex flex-col m-20 pl-20 ">
+          <article class="  max-w-xl text-white text-lg flex flex-col m-5">
           <h2 class="text-2xl m-10">¿Cómo hago mi pedido?</h2>
-          <p class="flex leading-loose "> 1) Sacas captura de la prenda o producto <br>
+          <div class=" justify-center">
+            <p class="text-left tracking-wide"> 1) Sacas captura de la prenda o producto <br>
           2) Envianos: Nombre, apellido, número de contacto y adjunta la captura <br>
           3) Envío a domicilio: pasas tu ubicación, una referencia con la altura y departamento <br>
           4) Retiro en local: consulta la ubicación dentro del mismo pedido <br>
           5) Recordá que para encargar un producto debes enviarnos el 20% del total<br>
           6) Listo! Nosotros nos encargamos de la entrega
-        </p>
-        </article>
-      </article>
-    </div>
+            </p>
+          </div>
+          </article>
+      </div>
+    </article>
   </section>
 
   <hr>
@@ -93,7 +97,7 @@ import Footer from "../components/Footer.astro";
         <div class="border-solid border-2 border-gray-700 mr-20 flex-col">
           <h2 class="text-2xl p-10">Transferencia bancaria</h2>
           <!-- -->
-          
+           
         </div>
         <div class="border-solid border-2 border-gray-700 justify-center mr-20 flex-row">
           <h2 class="text-2xl p-10">Billetera virtual</h2>
